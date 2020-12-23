@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_notes/blocs/blocs.dart';
 import 'package:flutter_notes/config/themes.dart';
+import 'package:flutter_notes/repositories/auth/auth_repository.dart';
 import 'package:flutter_notes/repositories/notes/notes_repository.dart';
 import 'package:flutter_notes/screens/screens.dart';
 import 'package:flutter_notes/widgets/widgets.dart';
@@ -59,7 +60,12 @@ class HomeScreen extends StatelessWidget {
                   iconSize: 28.0,
                   onPressed: () => authState is Authtenticated
                       ? context.read<AuthBloc>().add(LogOut())
-                      : print('Go to login screen!')),
+                      : Navigator.of(context).push(MaterialPageRoute(
+                          builder: (_) => BlocProvider<LoginBloc>(
+                              child: LoginScreen(),
+                              create: (_) => LoginBloc(
+                                  authBloc: context.read<AuthBloc>(),
+                                  authRepository: AuthRepository()))))),
               actions: [
                 _buildThemeIconButton(context),
               ],

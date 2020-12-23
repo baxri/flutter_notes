@@ -34,7 +34,8 @@ class AuthRepository extends BaseAuthRepository {
   }
 
   @override
-  Future<User> loginWithEmailAndPassword(String email, String password) async {
+  Future<User> loginWithEmailAndPassword(
+      {String email, String password}) async {
     final firebase_auth.UserCredential authResult = await _firebaseAuth
         .signInWithEmailAndPassword(email: email, password: password);
     return await _firebaseuserTouser(authResult.user);
@@ -47,7 +48,8 @@ class AuthRepository extends BaseAuthRepository {
   }
 
   @override
-  Future<User> signUpWithEmailAndPassword(String email, String password) async {
+  Future<User> signUpWithEmailAndPassword(
+      {String email, String password}) async {
     final currentUser = _firebaseAuth.currentUser;
     final authCredential = firebase_auth.EmailAuthProvider.credential(
         email: email, password: password);
