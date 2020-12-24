@@ -4,12 +4,23 @@ Simple flutter notes application with firebase abd BLOC pattern. nice demonstrat
 
 ## Dark mode
 
-![alt](./images/2.png)
-![alt](./images/3.png)
+Notes list        |  Add note
+:-------------------------:|:-------------------------:
+![alt](./images/2.png) |  ![alt](./images/3.png)
 
 ## Ligh mode
 
-![alt](./images/4.png)
-![alt](./images/1.png)
+Notes list        |  Add note
+:-------------------------:|:-------------------------:
+![alt](./images/4.png)|  ![alt](./images/3.png)
+
+
+
+
+
+
+
+
+
 
 
