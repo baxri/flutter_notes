@@ -8,7 +8,7 @@ Notes list        |  Add note
 :-------------------------:|:-------------------------:
 ![alt](./images/2.png) |  ![alt](./images/3.png)
 
-## Ligh mode
+## Light mode
 
 Notes list        |  Add note
 :-------------------------:|:-------------------------:
