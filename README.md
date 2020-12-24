@@ -1,6 +1,6 @@
 # Your notes
 
-Simple flutter notes application with firebase abd BLOC pattern. nice demonstration how state managment with bloc work in flutter. Provided Dark and Light theme with switcher. 
+Simple flutter notes application with firebase and BLOC pattern. Nice demonstration how state managment with bloc, Streams and Futures works in flutter. Provided Dark and Light theme with switcher. 
 
 ## Dark mode
 
