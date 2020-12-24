@@ -1,16 +1,15 @@
-# flutter_notes
+# Your notes
 
-A new Flutter project.
+Simple flutter notes application with firebase abd BLOC pattern. nice demonstration how state managment with bloc work in flutter and 
 
-## Getting Started
+## Dark mode
 
-This project is a starting point for a Flutter application.
+![alt](./images/2.png)
+![alt](./images/3.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Ligh mode
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![alt](./images/4.png)
+![alt](./images/1.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
